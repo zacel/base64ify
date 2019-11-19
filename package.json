@@ -1,0 +1,19 @@
+{
+  "name": "base64ify-cli",
+  "version": "1.0.0",
+  "description": "base 64 encode and decode strings from cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "testWatch": "jest --watchAll --coverage"
+  },
+  "bin": {
+    "base64ify": "bin/base64ify"
+  },
+  "author": "zac",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "minimist": "^1.2.0"
+  }
+}
