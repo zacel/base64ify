@@ -25,3 +25,9 @@ chmod +x bin/base64ify
 npm link
 ```
 
+## Notes:
+currently this cli doesn't work with unix pipe operators.
+```
+cat file.txt | base64ify
+```
+wont work.
