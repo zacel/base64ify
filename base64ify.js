@@ -21,12 +21,10 @@ var base64ify = module.exports = {
         }
     },
     requestForHelp(args) {
-        if (args[0] == '-h' || args[0] == "help") {
+        if (args[0] == '-h' || args[0] == "help" || args.length == 0) {
             return true;
         }
         return false;
     }
 }
 
-
-console.log(base64ify.encodeDecode(['decode', "dGVzdA=="]));

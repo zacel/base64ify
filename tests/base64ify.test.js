@@ -47,9 +47,13 @@ describe ('base64ify.base64ify recieves request for help', () => {
     test("returns help msg with two arg first being help", () => {
         expect(result).toEqual("Base64ify a Base64 Encoder Decoder: \n usage:\n to encode: base64ify 'string to encode'\n to decode: base64ify decode 'base64 encoded string");
     });
-    var result = base64ify.base64ify(["-h"]);
+    var result2 = base64ify.base64ify(["-h"]);
     test("returns help msg with one arg: -h", () => {
-        expect(result).toEqual("Base64ify a Base64 Encoder Decoder: \n usage:\n to encode: base64ify 'string to encode'\n to decode: base64ify decode 'base64 encoded string");
+        expect(result2).toEqual("Base64ify a Base64 Encoder Decoder: \n usage:\n to encode: base64ify 'string to encode'\n to decode: base64ify decode 'base64 encoded string");
+    });
+    var result3 = base64ify.base64ify([]);
+    test("returns help msg with no args", () => {
+        expect(result3).toEqual("Base64ify a Base64 Encoder Decoder: \n usage:\n to encode: base64ify 'string to encode'\n to decode: base64ify decode 'base64 encoded string");
     });
 }); 
 
